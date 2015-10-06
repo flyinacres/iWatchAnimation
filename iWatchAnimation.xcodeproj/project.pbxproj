@@ -13,6 +13,12 @@
 		A50C64A31BC34A77008FB51F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50C64A21BC34A77008FB51F /* Images.xcassets */; };
 		A50C64A61BC34A77008FB51F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50C64A41BC34A77008FB51F /* LaunchScreen.xib */; };
 		A50C64B21BC34A77008FB51F /* iWatchAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C64B11BC34A77008FB51F /* iWatchAnimationTests.swift */; };
+		A50C64C41BC34A8C008FB51F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C64C31BC34A8C008FB51F /* InterfaceController.swift */; };
+		A50C64C61BC34A8C008FB51F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50C64C51BC34A8C008FB51F /* Images.xcassets */; };
+		A50C64CA1BC34A8C008FB51F /* iWatchAnimation WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A50C64C91BC34A8C008FB51F /* iWatchAnimation WatchKit App.app */; };
+		A50C64D21BC34A8C008FB51F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50C64D01BC34A8C008FB51F /* Interface.storyboard */; };
+		A50C64D41BC34A8C008FB51F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50C64D31BC34A8C008FB51F /* Images.xcassets */; };
+		A50C64D71BC34A8C008FB51F /* iWatchAnimation WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A50C64BF1BC34A8C008FB51F /* iWatchAnimation WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +29,35 @@
 			remoteGlobalIDString = A50C64951BC34A77008FB51F;
 			remoteInfo = iWatchAnimation;
 		};
+		A50C64CB1BC34A8C008FB51F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A50C648E1BC34A77008FB51F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50C64C81BC34A8C008FB51F;
+			remoteInfo = "iWatchAnimation WatchKit App";
+		};
+		A50C64D51BC34A8C008FB51F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A50C648E1BC34A77008FB51F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50C64BE1BC34A8C008FB51F;
+			remoteInfo = "iWatchAnimation WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A50C64DE1BC34A8C008FB51F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A50C64D71BC34A8C008FB51F /* iWatchAnimation WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A50C64961BC34A77008FB51F /* iWatchAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWatchAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +70,14 @@
 		A50C64AB1BC34A77008FB51F /* iWatchAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iWatchAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50C64B01BC34A77008FB51F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50C64B11BC34A77008FB51F /* iWatchAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iWatchAnimationTests.swift; sourceTree = "<group>"; };
+		A50C64BF1BC34A8C008FB51F /* iWatchAnimation WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iWatchAnimation WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50C64C21BC34A8C008FB51F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50C64C31BC34A8C008FB51F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A50C64C51BC34A8C008FB51F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A50C64C91BC34A8C008FB51F /* iWatchAnimation WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iWatchAnimation WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50C64CF1BC34A8C008FB51F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50C64D11BC34A8C008FB51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A50C64D31BC34A8C008FB51F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +95,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A50C64BC1BC34A8C008FB51F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +110,8 @@
 			children = (
 				A50C64981BC34A77008FB51F /* iWatchAnimation */,
 				A50C64AE1BC34A77008FB51F /* iWatchAnimationTests */,
+				A50C64C01BC34A8C008FB51F /* iWatchAnimation WatchKit Extension */,
+				A50C64CD1BC34A8C008FB51F /* iWatchAnimation WatchKit App */,
 				A50C64971BC34A77008FB51F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +121,8 @@
 			children = (
 				A50C64961BC34A77008FB51F /* iWatchAnimation.app */,
 				A50C64AB1BC34A77008FB51F /* iWatchAnimationTests.xctest */,
+				A50C64BF1BC34A8C008FB51F /* iWatchAnimation WatchKit Extension.appex */,
+				A50C64C91BC34A8C008FB51F /* iWatchAnimation WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +165,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A50C64C01BC34A8C008FB51F /* iWatchAnimation WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A50C64C31BC34A8C008FB51F /* InterfaceController.swift */,
+				A50C64C51BC34A8C008FB51F /* Images.xcassets */,
+				A50C64C11BC34A8C008FB51F /* Supporting Files */,
+			);
+			path = "iWatchAnimation WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A50C64C11BC34A8C008FB51F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A50C64C21BC34A8C008FB51F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A50C64CD1BC34A8C008FB51F /* iWatchAnimation WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A50C64D01BC34A8C008FB51F /* Interface.storyboard */,
+				A50C64D31BC34A8C008FB51F /* Images.xcassets */,
+				A50C64CE1BC34A8C008FB51F /* Supporting Files */,
+			);
+			path = "iWatchAnimation WatchKit App";
+			sourceTree = "<group>";
+		};
+		A50C64CE1BC34A8C008FB51F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A50C64CF1BC34A8C008FB51F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +211,12 @@
 				A50C64921BC34A77008FB51F /* Sources */,
 				A50C64931BC34A77008FB51F /* Frameworks */,
 				A50C64941BC34A77008FB51F /* Resources */,
+				A50C64DE1BC34A8C008FB51F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A50C64D61BC34A8C008FB51F /* PBXTargetDependency */,
 			);
 			name = iWatchAnimation;
 			productName = iWatchAnimation;
@@ -150,6 +241,39 @@
 			productReference = A50C64AB1BC34A77008FB51F /* iWatchAnimationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A50C64BE1BC34A8C008FB51F /* iWatchAnimation WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50C64DB1BC34A8C008FB51F /* Build configuration list for PBXNativeTarget "iWatchAnimation WatchKit Extension" */;
+			buildPhases = (
+				A50C64BB1BC34A8C008FB51F /* Sources */,
+				A50C64BC1BC34A8C008FB51F /* Frameworks */,
+				A50C64BD1BC34A8C008FB51F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A50C64CC1BC34A8C008FB51F /* PBXTargetDependency */,
+			);
+			name = "iWatchAnimation WatchKit Extension";
+			productName = "iWatchAnimation WatchKit Extension";
+			productReference = A50C64BF1BC34A8C008FB51F /* iWatchAnimation WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A50C64C81BC34A8C008FB51F /* iWatchAnimation WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50C64D81BC34A8C008FB51F /* Build configuration list for PBXNativeTarget "iWatchAnimation WatchKit App" */;
+			buildPhases = (
+				A50C64C71BC34A8C008FB51F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iWatchAnimation WatchKit App";
+			productName = "iWatchAnimation WatchKit App";
+			productReference = A50C64C91BC34A8C008FB51F /* iWatchAnimation WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +289,12 @@
 					A50C64AA1BC34A77008FB51F = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = A50C64951BC34A77008FB51F;
+					};
+					A50C64BE1BC34A8C008FB51F = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A50C64C81BC34A8C008FB51F = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -183,6 +313,8 @@
 			targets = (
 				A50C64951BC34A77008FB51F /* iWatchAnimation */,
 				A50C64AA1BC34A77008FB51F /* iWatchAnimationTests */,
+				A50C64BE1BC34A8C008FB51F /* iWatchAnimation WatchKit Extension */,
+				A50C64C81BC34A8C008FB51F /* iWatchAnimation WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +334,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50C64BD1BC34A8C008FB51F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50C64CA1BC34A8C008FB51F /* iWatchAnimation WatchKit App.app in Resources */,
+				A50C64C61BC34A8C008FB51F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50C64C71BC34A8C008FB51F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50C64D21BC34A8C008FB51F /* Interface.storyboard in Resources */,
+				A50C64D41BC34A8C008FB51F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +375,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A50C64BB1BC34A8C008FB51F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50C64C41BC34A8C008FB51F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +390,16 @@
 			isa = PBXTargetDependency;
 			target = A50C64951BC34A77008FB51F /* iWatchAnimation */;
 			targetProxy = A50C64AC1BC34A77008FB51F /* PBXContainerItemProxy */;
+		};
+		A50C64CC1BC34A8C008FB51F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50C64C81BC34A8C008FB51F /* iWatchAnimation WatchKit App */;
+			targetProxy = A50C64CB1BC34A8C008FB51F /* PBXContainerItemProxy */;
+		};
+		A50C64D61BC34A8C008FB51F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50C64BE1BC34A8C008FB51F /* iWatchAnimation WatchKit Extension */;
+			targetProxy = A50C64D51BC34A8C008FB51F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +418,14 @@
 				A50C64A51BC34A77008FB51F /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A50C64D01BC34A8C008FB51F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A50C64D11BC34A8C008FB51F /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -390,6 +566,62 @@
 			};
 			name = Release;
 		};
+		A50C64D91BC34A8C008FB51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = iWatchAnimation_WatchKit_Extension;
+				INFOPLIST_FILE = "iWatchAnimation WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A50C64DA1BC34A8C008FB51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = iWatchAnimation_WatchKit_Extension;
+				INFOPLIST_FILE = "iWatchAnimation WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A50C64DC1BC34A8C008FB51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iWatchAnimation WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A50C64DD1BC34A8C008FB51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iWatchAnimation WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +647,22 @@
 			buildConfigurations = (
 				A50C64B91BC34A77008FB51F /* Debug */,
 				A50C64BA1BC34A77008FB51F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A50C64D81BC34A8C008FB51F /* Build configuration list for PBXNativeTarget "iWatchAnimation WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50C64D91BC34A8C008FB51F /* Debug */,
+				A50C64DA1BC34A8C008FB51F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A50C64DB1BC34A8C008FB51F /* Build configuration list for PBXNativeTarget "iWatchAnimation WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50C64DC1BC34A8C008FB51F /* Debug */,
+				A50C64DD1BC34A8C008FB51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
