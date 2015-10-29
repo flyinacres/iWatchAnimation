@@ -19,6 +19,12 @@
 		A50C64D21BC34A8C008FB51F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50C64D01BC34A8C008FB51F /* Interface.storyboard */; };
 		A50C64D41BC34A8C008FB51F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50C64D31BC34A8C008FB51F /* Images.xcassets */; };
 		A50C64D71BC34A8C008FB51F /* iWatchAnimation WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A50C64BF1BC34A8C008FB51F /* iWatchAnimation WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5BC43CF1BE1D2BC008EBEA4 /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = A5BC43CB1BE1D2BC008EBEA4 /* test1.png */; };
+		A5BC43D01BE1D2BC008EBEA4 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = A5BC43CC1BE1D2BC008EBEA4 /* test2.png */; };
+		A5BC43D11BE1D2BC008EBEA4 /* test3.png in Resources */ = {isa = PBXBuildFile; fileRef = A5BC43CD1BE1D2BC008EBEA4 /* test3.png */; };
+		A5BC43D21BE1D2BC008EBEA4 /* test4.png in Resources */ = {isa = PBXBuildFile; fileRef = A5BC43CE1BE1D2BC008EBEA4 /* test4.png */; };
+		A5BC43D81BE1D878008EBEA4 /* DrawDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC43D71BE1D878008EBEA4 /* DrawDice.swift */; };
+		A5BC43DC1BE1DB0D008EBEA4 /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC43DB1BE1DB0D008EBEA4 /* ImageFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,12 @@
 		A50C64CF1BC34A8C008FB51F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50C64D11BC34A8C008FB51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A50C64D31BC34A8C008FB51F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5BC43CB1BE1D2BC008EBEA4 /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
+		A5BC43CC1BE1D2BC008EBEA4 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
+		A5BC43CD1BE1D2BC008EBEA4 /* test3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test3.png; sourceTree = "<group>"; };
+		A5BC43CE1BE1D2BC008EBEA4 /* test4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test4.png; sourceTree = "<group>"; };
+		A5BC43D71BE1D878008EBEA4 /* DrawDice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawDice.swift; sourceTree = "<group>"; };
+		A5BC43DB1BE1DB0D008EBEA4 /* ImageFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +180,8 @@
 		A50C64C01BC34A8C008FB51F /* iWatchAnimation WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A5BC43DB1BE1DB0D008EBEA4 /* ImageFile.swift */,
+				A5BC43D71BE1D878008EBEA4 /* DrawDice.swift */,
 				A50C64C31BC34A8C008FB51F /* InterfaceController.swift */,
 				A50C64C51BC34A8C008FB51F /* Images.xcassets */,
 				A50C64C11BC34A8C008FB51F /* Supporting Files */,
@@ -186,6 +200,10 @@
 		A50C64CD1BC34A8C008FB51F /* iWatchAnimation WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				A5BC43CB1BE1D2BC008EBEA4 /* test1.png */,
+				A5BC43CC1BE1D2BC008EBEA4 /* test2.png */,
+				A5BC43CD1BE1D2BC008EBEA4 /* test3.png */,
+				A5BC43CE1BE1D2BC008EBEA4 /* test4.png */,
 				A50C64D01BC34A8C008FB51F /* Interface.storyboard */,
 				A50C64D31BC34A8C008FB51F /* Images.xcassets */,
 				A50C64CE1BC34A8C008FB51F /* Supporting Files */,
@@ -352,6 +370,10 @@
 			files = (
 				A50C64D21BC34A8C008FB51F /* Interface.storyboard in Resources */,
 				A50C64D41BC34A8C008FB51F /* Images.xcassets in Resources */,
+				A5BC43D21BE1D2BC008EBEA4 /* test4.png in Resources */,
+				A5BC43D01BE1D2BC008EBEA4 /* test2.png in Resources */,
+				A5BC43CF1BE1D2BC008EBEA4 /* test1.png in Resources */,
+				A5BC43D11BE1D2BC008EBEA4 /* test3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +401,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BC43DC1BE1DB0D008EBEA4 /* ImageFile.swift in Sources */,
+				A5BC43D81BE1D878008EBEA4 /* DrawDice.swift in Sources */,
 				A50C64C41BC34A8C008FB51F /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,6 +665,7 @@
 				A50C64B71BC34A77008FB51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A50C64B81BC34A77008FB51F /* Build configuration list for PBXNativeTarget "iWatchAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -649,6 +674,7 @@
 				A50C64BA1BC34A77008FB51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A50C64D81BC34A8C008FB51F /* Build configuration list for PBXNativeTarget "iWatchAnimation WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +683,7 @@
 				A50C64DA1BC34A8C008FB51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A50C64DB1BC34A8C008FB51F /* Build configuration list for PBXNativeTarget "iWatchAnimation WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +692,7 @@
 				A50C64DD1BC34A8C008FB51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

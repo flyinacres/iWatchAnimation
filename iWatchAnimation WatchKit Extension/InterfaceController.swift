@@ -12,10 +12,27 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    let drawDice = DrawDice()
+    
     var animationStatus = 1
     @IBOutlet weak var animation: WKInterfaceImage!
     
     @IBAction func buttonHit() {
+        // Test setting the image programmatically--seems to work
+        var readImage = drawDice.createDieImages("d4die", sides: 4, color: UIColor.blueColor(), width: 100, height: 100, radius: 50)
+        //WKInterfaceDevice().addCachedImage(readImage!, name: "d4die\(1)")
+
+        //animation.setImageNamed("d4die1.png")
+
+        //animation.setImage(readImage)
+        
+//        let animatedImage = UIImage.animatedImageNamed("d4die1",
+//            duration: 20)
+//        
+//        animation.setImage(animatedImage)
+        
+        let animatedImage = UIImage.animatedImageWithImages(readImage, duration: 1)
+        animation.setImage(animatedImage)
         if animationStatus == 1 {
             animation.stopAnimating()
             animationStatus = 0
